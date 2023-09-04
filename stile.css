@@ -1,0 +1,146 @@
+/* Reset delle margini e dei padding per il body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stile per l'header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Stile per la barra di navigazione */
+.navMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+}
+
+.navMenu li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+.navMenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Stile per il contenitore principale */
+#info {
+    margin: 2rem;
+}
+
+/* Stile per gli articoli */
+article {
+    margin: 2rem;
+}
+
+/* Stile per le immagini affiancate al testo */
+.flexbox {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stile per le righe numerate */
+.numeroRiga {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Stile per i bottoni */
+#bottoni button {
+    margin: 0.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Stile per la sezione dei riferimenti */
+#append {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Nascondi gli elementi "add", "del" e "gap" */
+.add,
+.del,
+.gap {
+    display: none;
+}
+
+/* Stile per gli elementi "gap" con sfondo rosso */
+gap {
+    background-color: red;
+    color: #fff;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    display: none;
+}
+
+/* Stile per la legenda dei colori di sfondo */
+.legend {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Colori corrispondenti ai tag */
+.add, add {
+    background-color: #0d00ff;
+    color: white;
+    display: none;
+}
+
+.del, del  {
+    background-color: #ccffcc;
+    display: none;
+}
+
+.gap{
+    background-color: red;
+}
+
+
+
+
+/* Media query per adattarsi a schermi più piccoli */
+@media (max-width: 768px) {
+    /* Ridurre il margine per articoli e contenitore principale */
+    article,
+    #info {
+        margin: 1rem;
+    }
+}
